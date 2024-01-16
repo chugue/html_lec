@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         .panel {
             display: grid;
@@ -20,6 +21,7 @@
 
         .right {
             display: grid;
+            z-index: 1;
             background-color: #F8ECEB;
             grid-column: 2/3;
             height: 800px;
@@ -29,9 +31,13 @@
         .footer {
             background-color: #ffffff;
             position: absolute;
+            z-index: 2;
             bottom: 0px;
             height: 100px;
             width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
         }
 
         .img-crop {
@@ -45,6 +51,7 @@
         .header {
             display: grid;
             position: absolute;
+            z-index: 3;
             grid-gap: 20px;
             width: 100%;
             height: 80px;
@@ -63,42 +70,62 @@
         .menu {
             display: grid;
             margin: auto;
-            grid-gap: 30px;
-            font-size: 16px;
+            grid-gap: 40px;
+            font-size: 20px;
             grid-template-columns: repeat(4, 1fr);
             text-align: center;
         }
 
         .eng {
             font-weight: bold;
-            font-size: 15px;
+            color: #666666;
+            font-size: 20px;
             margin: 10px;
             padding: 20px;
         }
 
         body {
             font-family: Blippo, fantasy;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
 
         .new {
             padding-bottom: 150PX;
             padding-left: 50PX;
             position: absolute;
-            font-size: 80px;
-            letter-spacing: 5px;
+            font-size: 90px;
+            letter-spacing: 10px;
         }
 
-        .f-elements {
+        .f-left {
+            bottom: 20px;
             font-size: 30px;
             color: #666666;
+            z-index: 3;
+            padding: 20px;
+            display: inline;
+            position: absolute;
+            justify-content: left;
+        }
 
+        .fa-solid {
+            display: inline;
+        }
+
+        .f-right {
+            display: inline-block;
+            color: #666666;
+            font-size: 30px;
+            z-index: 3;
+            padding: 20px;
+            bottom: 0px;
+            justify-content: right;
+            text-align: right;
         }
     </style>
 </head>
 
 <body>
-
     <div class="panel">
         <div class="header">
             <div class="zuzu">ZUZU.</div>
@@ -109,7 +136,7 @@
                 <span>contact</span>
             </div>
             <div class="eng">
-                <span>🔍 ENG</span>
+                <span><i class="fa-solid fa-magnifying-glass"></i> ENG</span>
             </div>
         </div>
 
@@ -119,21 +146,21 @@
         </div>
         <div class="right">
             <div class="footer">
-                <div class="f-elements ">
-                    <span>
-                        <i class="fa-solid fa-chevron-left"></i>
-
-                    </span>
+                <div class="f-left ">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <div class="f-elements"></div>
+                <div class="f-right">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
             </div>
             <div class="new">
                 <div>New</div>
                 <div>collection</div>
             </div>
-
         </div>
-
     </div>
 </body>
 
