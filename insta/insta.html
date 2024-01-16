@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .background {
+            width: auto;
+            height: 650px;
+            padding: 20px;
+        }
+
+        .upper {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .bottom {
+            background-color: green;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .main-panel1 {
+            display: grid;
+            justify-content: end;
+            height: 600px;
+        }
+
+        .main-panel2 {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: start;
+            grid-template-rows: repeat(9, 1fr);
+            height: 600px;
+        }
+
+        .button {
+            display: grid;
+            background-color: #B2DFFC;
+            font-size: 15px;
+            grid-column: 1/2;
+            block-size: 30px;
+            border: white;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .box1 {
+            display: grid;
+            width: 300px;
+            background-color: #FFFFFF;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding: 20px;
+            justify-content: center;
+            border: 1px solid #DEE2DD;
+            margin: 10px;
+            align-items: middle;
+            grid-row: 1/7;
+        }
+
+        .text-field {
+            display: grid;
+            grid-column-end: 1 span;
+            height: 80px;
+            grid-row-gap: 5px;
+        }
+
+        .img-container {
+            display: grid;
+            margin: 10px;
+            justify-content: center;
+        }
+
+        .ddo {
+            display: grid;
+            padding: 0px 10px 0px 10px;
+            grid-template-columns: 2fr 2fr 2fr;
+            justify-content: space-between;
+        }
+
+        .text {
+            display: grid;
+            justify-content: center;
+            color: #b0b1b4;
+        }
+
+        hr {
+            border-color: #ffffff;
+        }
+
+        .facebook {
+            display: grid;
+            color: #385185;
+            font-weight: bold;
+            justify-content: center;
+        }
+
+        .forgot {
+            display: grid;
+            font-weight: bold;
+            justify-content: center;
+        }
+
+        .box2 {
+            padding: 10px;
+            width: 300px;
+            background-color: white;
+            height: 25px;
+            display: inline-block;
+            position: static;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #DEE2DD;
+            margin: 10px;
+            grid-row: 7/8;
+        }
+
+        #join-text {
+            color: #013ab6;
+            font-weight: bold;
+        }
+
+        .box3 {
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 0px 0px 0px 20px;
+            margin: 10px;
+            height: 10px;
+            grid-row: 8/9;
+        }
+
+        .box4 {
+            display: inline;
+            justify-content: center;
+            text-align: center;
+            grid-row: 9/10;
+            margin: -10px 0px 10px 0px;
+        }
+
+        .imgs {
+            display: inline;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="upper ">
+            <div class="main-panel1">
+                <img src="/insta/login-main.png" alt="인스타 사진 예시">
+            </div>
+            <div class="main-panel2">
+                <div class="box1">
+                    <div class="img-container">
+                        <img src="/insta/logo.png" alt="인스타그램">
+                    </div>
+                    <div class="text-field">
+                        <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                        <input type="text" placeholder="비밀번호">
+                    </div>
+                    <input type="submit" value="로그인" class="button">
+                    <div class="ddo">
+                        <div class="hr">
+                            <hr>
+                        </div>
+                        <div class="text">또는</div>
+                        <div class="hr">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="facebook">
+                        <span>
+                            <img src="/insta/facebook-logo.png" alt="페이스북로고">
+                            Facebook으로 로그인
+                        </span>
+                    </div>
+                    <div class="forgot">
+                        <span>비밀번호를 잊으셨나요?</span>
+                    </div>
+                </div>
+                <div class="box2">
+                    <span>계정이 없으신가요?</span>
+                    <span id="join-text">가입하기</span>
+                </div>
+                <div class="box3">
+                    <span>앱을 다운로드 하세요.</span>
+                </div>
+                <div class="box4">
+                    <img src="/insta/login-ios.png" alt="애플스토어" class="imgs">
+                    <img src="/insta/login-android.png" alt="안드로이드" class="imgs">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div></div>
+            <div></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

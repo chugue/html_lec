@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .panel {
+            display: grid;
+            height: 100%;
+            position: relative;
+            background-color: #00ffff;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .left {
+            display: grid;
+            background-color: yellow;
+            grid-column: 1/2;
+            height: 800px
+        }
+
+        .right {
+            display: grid;
+            background-color: #F8ECEB;
+            grid-column: 2/3;
+            height: 800px;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            position: absolute;
+            bottom: 0px;
+            height: 100px;
+            width: 100%;
+        }
+
+        .img-crop {
+            background-image: url('/vacation/vacation.jpg');
+            background-image: cover;
+            background-position: center;
+            background-size: 1100px 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            display: grid;
+            position: absolute;
+            grid-gap: 20px;
+            width: 100%;
+            height: 80px;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+        }
+
+        .zuzu {
+            font-weight: bold;
+            font-size: 30px;
+            margin: 20px;
+            padding-left: 5px;
+            letter-spacing: 5px;
+        }
+
+        .menu {
+            display: grid;
+            margin: auto;
+            grid-gap: 30px;
+            font-size: 16px;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
+
+        .eng {
+            font-weight: bold;
+            font-size: 15px;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        body {
+            font-family: Blippo, fantasy;
+            letter-spacing: 2px;
+        }
+
+        .new {
+            padding-bottom: 150PX;
+            padding-left: 50PX;
+            position: absolute;
+            font-size: 80px;
+            letter-spacing: 5px;
+        }
+
+        .f-elements {
+            font-size: 30px;
+            color: #666666;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="panel">
+        <div class="header">
+            <div class="zuzu">ZUZU.</div>
+            <div class="menu">
+                <span>about</span>
+                <span>collections</span>
+                <span>videos</span>
+                <span>contact</span>
+            </div>
+            <div class="eng">
+                <span>🔍 ENG</span>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="img-crop"></div>
+
+        </div>
+        <div class="right">
+            <div class="footer">
+                <div class="f-elements ">
+                    <span>
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </span>
+                </div>
+                <div class="f-elements"></div>
+            </div>
+            <div class="new">
+                <div>New</div>
+                <div>collection</div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
