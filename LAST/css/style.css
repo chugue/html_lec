@@ -1,0 +1,284 @@
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.moremar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-v {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-side {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.mr-v {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(/LAST/images/background.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    color: white;
+    font-weight: 800;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.search-box {
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 60px;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgb(187, 186, 186);
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    height: 250px;
+    font-weight: bold;
+    border-color: white;
+    color: #4B4A4B;
+}
+
+table input {
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+}
+
+table input[type="text"] {
+    border: solid white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+table input[type="date"] {
+    border: solid white;
+    color: #4B4A4B;
+    font-weight: 100;
+}
+
+
+.button-box {
+    display: flex;
+    justify-content: end;
+}
+
+.font-style {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium';
+    color: #4B4A4B;
+}
+
+select {
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+    width: 100%;
+    height: 100%;
+    border: solid white;
+}
+
+button {
+    height: 45px;
+    width: 70px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #FF5A5E;
+    color: white;
+    font-weight: 800;
+    border-color: white;
+    box-shadow: 5px gray;
+}
+
+.title {
+    display: block;
+}
+
+.body {
+    width: 85%;
+}
+
+section {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 8px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 1px solid #999999;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.card-title {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #4B4A4B;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.ad-image1 {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 30px;
+}
+
+.img-box {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    grid-column-gap: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    background-color: #FF5A5E;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #4B4A4B;
+}
+
+.ad-img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.home-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 200px;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.text1 {
+    color: #999999;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.text2 {
+    color: #4B4A4B;
+    font-size: 20px;
+    font-weight: 1000;
+    letter-spacing: -1px;
+}
+
+.grade-box {
+    display: flex;
+    grid-column-gap: 10px;
+}
+
+.count {
+    font-weight: 600;
+    color: #4B4A4B;
+}
+
+.text3 {
+    font-weight: 600;
+    color: #4B4A4B;
+}
+
+.home-img-box {
+    width: 100%;
+    height: 220px;
+}
