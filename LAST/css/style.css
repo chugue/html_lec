@@ -234,7 +234,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .home {
@@ -258,9 +258,8 @@ section {
 
 .text2 {
     color: #4B4A4B;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 1000;
-    letter-spacing: -1px;
 }
 
 .grade-box {
