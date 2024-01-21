@@ -15,6 +15,11 @@
     margin-top: 10px;
 }
 
+.letter-space {
+    letter-spacing: -1px;
+}
+
+
 .padding-20 {
     padding: 20px;
 }
@@ -68,6 +73,7 @@ nav {
     grid-column-gap: 30px;
     color: white;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .logo {
@@ -147,6 +153,7 @@ button {
     font-weight: 800;
     border-color: white;
     box-shadow: 5px gray;
+    cursor: pointer;
 }
 
 .title {
